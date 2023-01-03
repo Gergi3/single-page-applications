@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Our Cookbook</title>
+    <link rel="stylesheet" href="/static/site.css">
+    <link rel="stylesheet" href="/static/recipe.css">
+    <link rel="stylesheet" href="/static/form.css">
+    <script src="/src/app.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Our Cookbook</h1>
+        <nav class="navigation">
+            <a href="/">Home</a>
+            <a href="/catalog">Catalog</a>
+            <div class="user-nav">
+                <a href="/create">Create Recipe</a>
+                <a id="logoutBtn" href="/logout">Logout</a>
+            </div>
+            <div class="guest-nav">
+                <a href="/login">Login</a>
+                <a href="/register">Register</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- HOME -->
+        <section class="home">
+            <h3> This is a website about cooking. </h3>
+            <div class="home-content" >
+                View, cook and enjoy delicious recipes.
+                You can even post your own recipes by creating an account.
+            </div>
+        </section>
+
+        <!-- CATALOG -->
+        <section class="catalog">
+        </section>
+
+        <!-- Details -->
+        <section class="detailed-recipe">
+        </section>
+
+        <!-- CREATE -->
+        <section class="create-recipe">
+            <article>
+                <h2>New Recipe</h2>
+                <form>
+                    <label>Name:
+                    <input type="text" name="name" placeholder="Recipe name"></label>
+                    <label>Image:
+                    <input type="text" name="img" placeholder="Image URL"></label>
+                    <label class="ml">Ingredients:
+                    <textarea name="ingredients" placeholder="Enter ingredients on separate lines"></textarea></label>
+                    <label class="ml">Preparation:
+                    <textarea name="steps" placeholder="Enter preparation steps on separate lines"></textarea></label>
+                    <input type="submit" value="Create Recipe">
+                </form>
+            </article>
+        </section>
+
+        <!-- EDIT -->
+        <section class="edit-recipe">
+            <article>
+                <h2>Edit Recipe => (<span class="edit-title"> txt </span>)</h2>
+                <form>
+                    <label>Name:
+                    <input type="text" name="name" placeholder="Recipe name"></label>
+                    <label>Image:
+                    <input type="text" name="img" placeholder="Image URL"></label>
+                    <label class="ml">Ingredients:
+                    <textarea name="ingredients" placeholder="Enter ingredients on separate lines"></textarea></label>
+                    <label class="ml">Preparation:
+                    <textarea name="steps" placeholder="Enter preparation steps on separate lines"></textarea></label>
+                    <input type="submit" value="Submit Edit">
+                </form>
+            </article>
+        </section>
+
+        <!-- LOGIN -->
+        <section class="login">
+            <article>
+                <h2>Login</h2>
+                <form>
+                    <label>E-mail: <input type="text" name="email"></label>
+                    <label>Password: <input type="password" name="password"></label>
+                    <input type="submit" value="Login">
+                </form>
+            </article>
+        </section>
+
+        <!-- REGISTER -->
+        <section class="register">
+            <article>
+                <h2>Register</h2>
+                <form>
+                    <label>E-mail: <input type="text" name="email"></label>
+                    <label>Password: <input type="password" name="password"></label>
+                    <label>Repeat: <input type="password" name="rePass"></label>
+                    <input type="submit" value="Register">
+                </form>
+            </article>
+        </section>
+
+        <!-- LOGOUT -->
+        <section class="logout">
+            <article>
+                <h3 class="logout-message">Successfully logged out!</h3>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
